@@ -52,7 +52,7 @@ namespace ObjectStorage.MasterNode
         {
             _nodeStorage.AddWorker(new LocalWorker(nodeLocalization, name, totalMemory));
 
-             new LocalWorkerNodeStarter(nodeLocalization, name).Start();
+             //new LocalWorkerNodeStarter(nodeLocalization, name).Start();
         }
 
         public void BalanceNodes()

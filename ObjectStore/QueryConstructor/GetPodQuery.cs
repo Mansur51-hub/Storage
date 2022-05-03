@@ -37,6 +37,8 @@ namespace ObjectStorage.QueryConstructor
             var client = TcpSender.SendData(_packet.GetDataToSend(), _nodeLocalization);
 
             _recievedData = TcpSender.RecieveData(client);
+
+            client.Close();
         }
 
         public byte[] RecieveData()
